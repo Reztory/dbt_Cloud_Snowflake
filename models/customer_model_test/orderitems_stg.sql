@@ -1,0 +1,9 @@
+select
+ORDERID, 
+ORDERITEMID, 
+PRODUCTID,
+QUANTITY, 
+UNITPRICE, 
+QUANTITY * UNITPRICE AS TOTALPRICE,
+UPDATED_AT
+from {{source("landing", 'orderitems')}}
