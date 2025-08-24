@@ -15,4 +15,4 @@ from
 JOIN
     {{ ref('orderitems_stg') }} OI ON O.ORDERID = OI.ORDERID
 
-GROUP BY 1,2,3,4,5,6,7
+GROUP BY 1,2,3,4,5,6,7,10
